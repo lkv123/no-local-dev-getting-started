@@ -14,8 +14,8 @@ class Contact < ActiveRecord::Base
   self.table_name = 'salesforce.contact'
 end
 
-get "/accounts" do
- @accounts = Account.all
+get "/contacts" do
+  @contacts = Contact.all
   erb :index
 end
 
